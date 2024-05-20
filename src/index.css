@@ -1,0 +1,107 @@
+:root{
+  --section-overlay: rgba(0, 0, 0, 0.7);
+  --background-overlay:rgba(110, 107, 107, 0.2);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.app{
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.overlay{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-overlay)
+}
+.container{
+  max-width: 800px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.section{
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  color: white;
+}
+.section_inputs,.section_temperature{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--section-overlay);
+}
+.section_inputs{
+  height: 60px;
+}
+.section_temperature{
+  margin-top:  50px;
+  
+}
+
+.section_inputs input{
+  border: 0.8ps solid rgb(255, 255, 255);
+  border-radius: 0.4rem;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.section_inputs button{
+  padding: 10px 45px;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: white;
+}
+.section_inputs button:hover{
+  cursor: pointer;
+  background-color: lightgray;
+}
+.icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon h3{
+  font-size: 15px;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+.temperature h1{
+  font-size: 50px;
+}
+@media(max-width: 770px){
+  .section_inputs input{
+    width: 200px;
+    height: 40px;
+    margin-right: 15px;
+  }
+  .section_inputs button{
+    width: 20px;
+    height: 40px;
+  }
+}
+
+
+
+  
+  
